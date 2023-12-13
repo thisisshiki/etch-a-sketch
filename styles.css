@@ -1,0 +1,27 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 600px;
+}
+
+.grid-item {
+  width: calc(100% / 16);
+  height: calc(100% / 16);
+  border: 1px solid black;
+}
