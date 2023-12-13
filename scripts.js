@@ -32,4 +32,34 @@ clear.addEventListener('click', () => {
     });
 });
 
+const random = document.querySelector('#random');
+random.addEventListener('click', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach((gridItem) => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+        });
+    });
+});
+
+const black = document.querySelector('#black');
+black.addEventListener('click', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach((gridItem) => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.style.backgroundColor = 'black';
+        });
+    });
+});
+
+const eraser = document.querySelector('#eraser');
+eraser.addEventListener('click', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach((gridItem) => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.style.backgroundColor = 'white';
+        });
+    });
+});
+
 
